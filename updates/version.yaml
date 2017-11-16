@@ -1,0 +1,9 @@
+1.0.1:
+    - 'Initial integration of Laravel Passport'
+    # - IMPLEMENTED BY OCTOBER SEPARATELY
+    # - create_password_resets.php
+    - create_oauth_auth_codes.php
+    - create_oauth_access_tokens.php
+    - create_oauth_refresh_tokens.php
+    - create_oauth_clients.php
+    - create_oauth_personal_access_clients.php
