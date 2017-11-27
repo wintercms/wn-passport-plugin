@@ -1,4 +1,4 @@
-<?php namespace LukeTowers\Passport;
+<?php namespace LukeTowers\Passport\Models;
 
 use Backend\Models\User as BackendUserModel;
 
@@ -33,7 +33,7 @@ class BackendUser extends BackendUserModel implements AuthenticatableContract
      *
      * @var string
      */
-    protected $rememberTokenName = 'persist_code';
-
-
+    public function __construct() {
+        $rememberTokenName = 'persist_code';   
+    }
 }
