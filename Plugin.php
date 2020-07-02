@@ -3,6 +3,7 @@
 use App;
 use Config;
 use Laravel\Passport\Passport;
+use LukeTowers\Passport\Classes\Authenticate;
 use System\Classes\PluginBase;
 use Illuminate\Foundation\AliasLoader;
 
@@ -11,6 +12,10 @@ use Illuminate\Foundation\AliasLoader;
  */
 class Plugin extends PluginBase
 {
+    public $middlewareAliases = [
+        'auth' => Authenticate::class
+    ];
+
     /**
      * Returns information about this plugin.
      *
@@ -27,11 +32,29 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerSettings()
+    {
+        return [
+            'settings' => [
+                'label'       => 'Passport Settings',
+                'description' => 'Manage passport based settings.',
+                'category'    => 'Passport',
+                'icon'        => 'icon-cog',
+                'class'       => 'LukeTowers\Passport\Models\Settings',
+                'order'       => 500,
+                'keywords'    => 'user auth passport'
+            ]
+        ];
+    }
+
     /**
      * Runs right before the request route
      */
     public function boot()
     {
+        // Boot middleware aliases
+        $this->aliasMiddleware();
+
         // Disable the Laravel migrations from Passport, handled via plugin updates
         Passport::ignoreMigrations();
 
@@ -79,6 +102,20 @@ class Plugin extends PluginBase
                     $aliasLoader->alias($alias, $path);
                 }
             }
+        }
+    }
+
+    /**
+     * Registers provided middleware aliases with the router
+     */
+    protected function aliasMiddleware()
+    {
+        $router = $this->app['router'];
+
+        $method = method_exists($router, 'aliasMiddleware') ? 'aliasMiddleware' : 'middleware';
+
+        foreach ($this->middlewareAliases as $alias => $middleware) {
+            $router->$method($alias, $middleware);
         }
     }
 }

@@ -74,7 +74,7 @@
                 'providers' => [
                     'users' => [
                         'driver' => 'eloquent',
-                        'model' => \LukeTowers\Passport\Models\BackendUser::class,
+                        'model' => \LukeTowers\Passport\Models\Settings::get('user_class', 'LukeTowers\Passport\Models\BackendUser'),
                     ],
 
                     // 'users' => [
