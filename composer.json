@@ -13,6 +13,7 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "laravel/passport": "~4.0"
+        "laravel/passport": "~8.5",
+        "lcobucci/jwt": "3.3.3"
     }
 }

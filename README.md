@@ -5,8 +5,8 @@ WORK-IN-PROGRESS Laravel Passport integration for OctoberCMS
 
 # Installation
 Add the plugin to your application and then run `php artisan october:up` to run the plugin's migrations.
-Following https://laravel.com/docs/5.5/passport#installation would have you run `php artisan passport:install`.
-Read https://laravel.com/docs/5.5/passport for more information on using Passport.
+Following https://laravel.com/docs/6.x/passport#installation would have you run `php artisan passport:install`.
+Read https://laravel.com/docs/6.x/passport for more information on using Passport.
 
 **NOTE:**
 
