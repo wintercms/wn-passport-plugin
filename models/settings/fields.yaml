@@ -1,0 +1,7 @@
+fields:
+    user_class:
+        label: "User Model Class"
+        span: auto
+        required: 1
+        type: text
+        comment: "i.e. Backend\\Models\\User. Default: LukeTowers\\Passport\\Models\\BackendUser"
