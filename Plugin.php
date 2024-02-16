@@ -23,7 +23,7 @@ class Plugin extends PluginBase
             'description' => 'luketowers.passport::lang.plugin.description',
             'author'      => 'Luke Towers',
             'icon'        => 'icon-lock',
-            'homepage'    => 'https://github.com/LukeTowers/oc-passport-plugin',
+            'homepage'    => 'https://github.com/wintercms/wn-passport-plugin',
         ];
     }
 
