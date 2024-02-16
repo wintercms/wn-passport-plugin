@@ -46,7 +46,7 @@ class Plugin extends PluginBase
      * Boots (configures and registers) any packages found within this plugin's packages.load configuration value
      *
      * @see https://luketowers.ca/blog/how-to-use-laravel-packages-in-october-plugins
-     * @author Luke Towers <octobercms@luketowers.ca>
+     * @author Luke Towers <info@luketowers.ca>
      */
     public function bootPackages()
     {
