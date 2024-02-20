@@ -2,6 +2,6 @@
 return [
     'plugin'      => [
         'name'        => 'Passport',
-        'description' => 'Integrates the laravel/passport authentication package into OctoberCMS.',
+        'description' => 'Integrates the laravel/passport authentication package into WinterCMS.',
     ],
 ];
