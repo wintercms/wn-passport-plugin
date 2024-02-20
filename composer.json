@@ -1,9 +1,9 @@
 {
-    "name": "luketowers/oc-passport-plugin",
-    "type": "october-plugin",
-    "description": "Laravel Passport integration for OctoberCMS",
-    "homepage": "https://github.com/LukeTowers/oc-passport-plugin",
-    "keywords": ["october", "octobercms", "laravel-passport", "api", "authentication"],
+    "name": "wintercms/wn-passport-plugin",
+    "type": "winter-plugin",
+    "description": "Laravel Passport integration for WinterCMS",
+    "homepage": "https://github.com/wintercms/wn-passport-plugin",
+    "keywords": ["winter", "wintercms", "laravel-passport", "api", "authentication"],
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +13,6 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "laravel/passport": "~4.0"
+        "laravel/passport": "^11.10"
     }
 }
