@@ -23,7 +23,7 @@ class Plugin extends PluginBase
             'description' => 'luketowers.passport::lang.plugin.description',
             'author'      => 'Luke Towers',
             'icon'        => 'icon-lock',
-            'homepage'    => 'https://github.com/LukeTowers/oc-passport-plugin',
+            'homepage'    => 'https://github.com/wintercms/wn-passport-plugin',
         ];
     }
 
@@ -46,7 +46,7 @@ class Plugin extends PluginBase
      * Boots (configures and registers) any packages found within this plugin's packages.load configuration value
      *
      * @see https://luketowers.ca/blog/how-to-use-laravel-packages-in-october-plugins
-     * @author Luke Towers <octobercms@luketowers.ca>
+     * @author Luke Towers <info@luketowers.ca>
      */
     public function bootPackages()
     {
